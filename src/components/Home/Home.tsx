@@ -10,10 +10,11 @@ interface Props {
 }
 
 const useStyles = makeStyles({
+   
     background: {
-        backgroundImage: `linear-gradient(rgba(0, 49, 85) 0%, rgba(121,147,163,1) 47%, rgba(249,249,249,1) 100%)`,
+        backgroundImage: 'linear-gradient(180deg, #e3ffe7 0%, #d9e7ff 100%)',
         width: '100%',
-        height: '90%',
+        height: '93%',
         backgroundPosition: 'center',
         position: 'absolute',
         zIndex: -1,
@@ -21,13 +22,13 @@ const useStyles = makeStyles({
     main_text: {
         textAlign: 'center',
         position: 'relative',
-        top: '40%',
+        top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        color: 'white',
+        color: '#708090',
     },
     button_text: {
-        color: 'white',
+        color: '#708099',
         textDecoration: 'none',
     },
 })
@@ -41,7 +42,7 @@ export const Home = ( props: Props ) => {
             <div className={classes.main_text}>
                 <h1>{ props.title }</h1>
                 <Button>
-                    <Link to='/library' className={classes.button_text}>Take me to my Library</Link>
+                    <Link to='/library' className={classes.button_text}>Take me to my collection</Link>
                 </Button>
             </div>
             </div>

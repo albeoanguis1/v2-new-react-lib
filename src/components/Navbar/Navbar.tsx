@@ -7,7 +7,7 @@ import Book from '../../assets/images/112-book-morph-gradient.gif';
 const useStyles = makeStyles({
     logo: {
         content: `url(${Book})`,
-        maxWidth: '20%',
+        maxWidth: '15%',
         height: 'auto',
     },
     navlogo: {
@@ -29,16 +29,16 @@ const useStyles = makeStyles({
         flexDirection: 'row',
     },
     navbar: {
-        backgroundColor: '#003155',
+        backgroundColor: '#e3ffe7',
         zIndex: 1,
         borderBottom: '1px solid grey',
     },
     navbarItem: {
-        color: 'white',
+        color: 'gray',
         textDecoration: 'none',
     },
     p5: {
-        padding: '5px',
+        padding: '1px',
     },
     spaceBetween: {
         justifyContent: 'space-between',
@@ -50,14 +50,14 @@ const useStyles = makeStyles({
         listStyleType: 'none',
     },
     width60: {
-        width: '60%',
+        width: '55%',
     },
     width100: {
         width: '100%',
     },
     psides: {
-        paddingRight: '10px',
-        paddingLeft: '10px',
+        paddingRight: '50px',
+        paddingLeft: '25px',
     },
 })
 

@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     text: {
         display: 'flex',
         flexDirection: 'column',
-        color: '#4ef3b4',
+        color: 'gray',
         textDecoration: 'none',
         backgroundColor: 'white',
         width: '60%',
@@ -148,20 +148,20 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     toolbar:{
       display: 'flex',
-      backgroundColor: '#003155',
-      color: 'white',
-      fontFamily: "Georgia, 'Times New Roman', Times, serif",
+      backgroundColor: '#e9ffe9',
+      color: 'gray',
+      fontFamily: "'Arial', Arial, sans-serif",
     },
     toolbar_button: {
       marginLeft: 'auto',
-      color: 'white',
-      fontFamily: "Georgia, 'Times New Roman', Times, serif",
+      color: 'gray',
+      fontFamily: "'Arial', Arial, sans-serif",
     },
     margin_top: {
         marginTop: '50px',
     },
     font: {
-        fontFamily: "Georgia, 'Times New Roman', Times, serif",
+        fontFamily: "'Arial', Arial, sans-serif",
     },
     leftMargin: {
         marginLeft: '240px',
@@ -198,10 +198,7 @@ export const Library = withRouter(( props:LibraryProps ) => {
             text: 'Home',
             onClick: () => history.push('/')
         },
-        {
-            text: 'Sign In',
-            onClick: () => history.push('/signin')
-        },
+        
         {
             text: 'About',
             onClick: () => history.push('/about')
