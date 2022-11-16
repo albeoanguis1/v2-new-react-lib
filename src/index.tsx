@@ -31,9 +31,9 @@ ReactDOM.render(
         <Route path='/about'>
           <About></About>
         </Route>
-        {/* <Route path='/signin'>
+        <Route path='/signin'>
           <SignIn></SignIn>
-        </Route> */}
+        </Route>
 
 
       </Switch>

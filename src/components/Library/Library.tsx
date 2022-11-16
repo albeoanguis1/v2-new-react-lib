@@ -198,7 +198,10 @@ export const Library = withRouter(( props:LibraryProps ) => {
             text: 'Home',
             onClick: () => history.push('/')
         },
-        
+        {
+            text: 'Sign In',
+            onClick: () => history.push('/signin')
+        },
         {
             text: 'About',
             onClick: () => history.push('/about')
