@@ -1,4 +1,4 @@
-import React, {useState}  from 'react'
+import React, {Suspense, useState}  from 'react'
 import { useGetData } from '../../custom-hooks'
 import { Link } from 'react-router-dom';
 import {Paper} from '@material-ui/core';
@@ -199,10 +199,6 @@ export const Library = withRouter(( props:LibraryProps ) => {
             onClick: () => history.push('/')
         },
         {
-            text: 'Sign In',
-            onClick: () => history.push('/signin')
-        },
-        {
             text: 'About',
             onClick: () => history.push('/about')
         },
@@ -252,7 +248,7 @@ export const Library = withRouter(( props:LibraryProps ) => {
                         const { text, onClick } = item;
                         return (
                             <ListItem button key={text} onClick={onClick}>
-                                <ListItemText primary={text} />
+                                    <ListItemText primary={text} />
                             </ListItem>
                         );
                     })}
